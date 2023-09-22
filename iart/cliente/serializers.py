@@ -10,3 +10,12 @@ class ClienteSerializer(serializers.ModelSerializer):
         
         fields = "__all__"
         
+
+class ClienteListarVendaSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        
+        model = Cliente
+        
+        fields = ["id", "nome_cliente", "email_cliente"]
+        
